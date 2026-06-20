@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <select id="citySelect">
+            <option value="">Select a city</option>
+            <option value="Ghaziabad">Ghaziabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="New York">New York</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Jammu">Jammu</option>
+        </select>
+
+        <button onclick="getWeather()">
+            Get Weather
+        </button>
+
+        <button id="toggleBtn" onclick="toggleTemperature()">
+            Show °F
+        </button>
+
+        <div id="weatherResult"></div>
+    </div>
+
+    <script src="Weather.js"></script>
+
+</body>
+
+</html>
